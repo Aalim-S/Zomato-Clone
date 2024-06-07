@@ -1,0 +1,396 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 550px;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('images/zomato-img.jpeg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center ;
+  color: white;
+  /* font-family: 'Roboto', sans-serif;
+  font-family: 'Varela Round', sans-serif; */
+}
+
+.navs{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 18px;
+  padding: 22px;
+  padding-left: 550px;
+  cursor: pointer;
+}
+
+.headline{
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.headline h1{
+  font-size: 80px;
+  font-weight:700;
+}
+
+.headline p{
+  text-align: center;
+  font-size: 35px;
+}
+
+section{
+  width: 100%;
+  height: 250px;
+}
+
+.india{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.india h1{
+  font-size: 35px;
+  font-weight: 300;
+  margin-top: 28px;
+}
+
+.india h1 img{
+  width: 50px;
+  border-radius: 8px;
+}
+
+.india p{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  color: gray;
+  line-height: 30px;
+}
+.city{
+  width: 74%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 35px;
+}
+.box{
+  height: 65px;
+  display: grid;
+  grid-template-columns: 1fr 55px;
+  place-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgb(201, 200, 200);
+  transition: box-shadow 0.15s;
+}
+.box:hover{
+  box-shadow: 0 3px 3px rgb(201, 200, 200);
+}
+
+.box p{
+  width: 100%;
+  font-size: 19px;
+  text-align: start;
+  font-weight: 300;
+  padding-left: 25px;
+}
+
+.box span i{
+  font-size: 10px;
+}
+
+
+ /* -------------------------- footer section ------------------------ */
+ footer{
+  width: 100%;
+  background: #F8F8F8;
+  margin-top: 40px;
+ }
+ .footer-div{
+  width: 74%;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+ }
+ .ind-btn img{
+  width: 20px;
+ }
+ .ind-zomato{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px 30px;
+ }
+ .ind-zomato img[src="images/zomo.avif"]{
+  width: 150px;
+  background: #000;
+ }
+ .select-country{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+ }
+ .select-country .ind-btn, .eng-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 10px;
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+  gap: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  background: #F8F8F8;
+ }
+ .about-zomato-section{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+ }
+ .about-zomato, .Zomaverse, .for-restuarants, .learn-more{
+  line-height: 28px;
+ }
+ .about-zomato-section ul{
+  font-family: Okra, Helvetica, sans-serif;
+ }
+ .about-zomato-section ul li{
+  list-style: none;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(105, 105, 105);
+  cursor: pointer;
+ }
+ .about-zomato-section ul li:hover{
+  color: rgb(67, 67, 67);
+ }
+ .about-zomato ul li:first-child, .Zomaverse ul li:first-child, .for-restuarants ul li:first-child, .learn-more ul li:first-child{
+  font-weight: 450;
+  color: black;
+  letter-spacing: 2px;
+  cursor: auto;
+ }
+
+ .social-link{
+  padding-right: 50px;
+ }
+
+ .social-link p{
+  font-family: Okra, Helvetica, sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 14px;
+  padding-top: 6px;
+  letter-spacing: 2px;
+ }
+
+ .app-img{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+ }
+ .app-img img{
+  width: 150px;
+  cursor: pointer;
+ }
+ .apps-link{
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  margin-top: 10px;
+ }
+ .apps-link i{
+  cursor: pointer;
+ }
+
+ /* ------------------------------- privacy-policy ------------------------ */
+
+ .privacy-policy{
+  border-top: 0.5px solid rgb(202, 201, 201);
+  margin-top: 50px;
+  padding: 20px 0px 30px;
+  font-size: 13px;
+  color:rgb(79, 79, 79);
+  font-family: Okra, Helvetica, sans-serif;
+  font-weight: 300;
+ }
+
+ /* --------------------- sing up popup ----------------------------------------- */
+ .sing-up-popup{
+  width: 450px;
+  position: absolute;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 25px;
+  border-radius: 8px;
+  display: none;
+ }
+ .show{
+  display: block;
+  z-index: 10;
+ }
+ .opacity-body{
+  background: rgb(59, 57, 57);
+  overflow: hidden;
+ }
+ .sing-up{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(79, 79, 79);
+  font-family: Okra, Helvetica, sans-serif;
+ }
+ .sing-up i{
+  font-size: 20px;
+  cursor: pointer;
+ }
+ .full-name, .email, .create-account, .sign-in{
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  border: 0.5px solid rgb(207, 207, 207);
+  font-size: 18px;
+  font-weight: 300;
+ }
+ .full-name::placeholder, .email::placeholder{
+  color: rgb(197, 196, 196);
+ }
+
+ /* ---------------------------- checkbox style -------------------------------- */
+ .agree{
+  margin-top: 25px;
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+  color: #696969;
+ }
+ .agree input{
+  margin-top: 5px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 3.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+ }
+ .agree input:hover{
+  border: 1px solid red;
+ }
+ .agree input:after{
+  content: "\f00c";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: red;
+  display: none;
+ }
+ .agree input:checked{
+  background: white;
+ }
+ .agree input:checked:after{
+  display: block;
+ }
+
+ .agree label span{
+  color: red;
+ }
+.create-account{
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background: #cecece;
+  margin: 25px 0px 15px;
+}
+ /* --------------end--------- */
+.sign-in{
+  margin: 16px 0px 25px;
+  padding: 9px 0px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+.sign-in i{
+  margin-right: 5px;
+  font-size: 17px;
+}
+.sign-in:hover{
+  background: rgb(242, 250, 253);
+  border: .1px solid rgb(184, 222, 235);
+}
+.login{
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #2e2e2e;
+}
+.login span{
+  color: red;
+  cursor: pointer;
+}
+.hr{
+  color: white;
+}
+.or{
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+}
+.or::before{
+  content: "";
+  height: 1px;
+  width: 185px;
+  background: gainsboro;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.or::after{
+  content: "";
+  height: 0.1px;
+  width: 185px;
+  background: gainsboro;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+#hr{
+  border: none;
+ background:  gainsboro;
+ height: 0.1px;
+}
